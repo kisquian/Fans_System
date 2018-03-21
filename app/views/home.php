@@ -21,6 +21,7 @@
           
               <tr>
                 <th>ID</th>
+                <th>FOTO</th>
                 <th>Apellido</th>
                 <th>Nombre</th>
                 <th>C. I</th>
@@ -32,6 +33,7 @@
                   foreach( $listaPosts as $pst ) { ?>
                     <tr id="<?php echo $pst->id ?>">
                       <td><?php echo $pst->id ?></td>
+                      <td><img src="<?php echo "upload".DIRECTORY_SEPARATOR; echo $pst->img ?>"></td>
                       <td><?php echo $pst->apellidos; ?></td>
                       <td><?php echo $pst->nombre; ?></td>
                       <td><?php echo $pst->cedula; ?></td>

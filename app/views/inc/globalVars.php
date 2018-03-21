@@ -1,4 +1,5 @@
 <?php $the_title = "Gestión de Socios - A. L. R. L. U";
+$uploadFolder = dirname(__FILE__);
 
 if (isset($_GET['msg'])) {
 	
